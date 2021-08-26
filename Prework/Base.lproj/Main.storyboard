@@ -125,18 +125,24 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="9ap-Ye-Ejd">
-                                <rect key="frame" x="33" y="165" width="332" height="32"/>
+                                <rect key="frame" x="33" y="147" width="332" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
-                                    <segment title="White"/>
-                                    <segment title="Black"/>
+                                    <segment title="Light"/>
+                                    <segment title="Dark"/>
                                 </segments>
+                                <connections>
+                                    <action selector="colorChange:" destination="qSW-Ma-hJj" eventType="valueChanged" id="4pz-B4-vQ0"/>
+                                </connections>
                             </segmentedControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="YGz-9r-6p2"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="TfL-Oe-3Lc"/>
+                    <connections>
+                        <outlet property="colorChanger" destination="9ap-Ye-Ejd" id="TUS-DT-nBj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MAQ-ky-c7a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
