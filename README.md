@@ -34,7 +34,7 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+The main challenge that I encountered when building the app was making a segmented control so that you could change the background color of the application to either light mode or dark mode. At first I had a first time actually implementing the logic to make a color change actually happen. In the beginning I could change the background color of the application to either light mode or dark mode but the background color change only happened in the settings view and it did not occur in the main view. To fix this I used the forEach loop so that I could change the background color of every view instead of just the settings view. Finally I had a problem where the segmented control index would revert back to Light, the default choice, even when the actual background color was Dark when i went back to the settings view from the main view. To solve that problem i went into viewDidLoad and used an if-else statement to make sure that when the background color was Dark the segmented control index would be 1 and when the background color was Light the segmented control index would be 0.
 
 ## License
 
